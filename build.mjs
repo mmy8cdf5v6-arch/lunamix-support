@@ -1,12 +1,11 @@
 // Builds the public Lunamix support site (GitHub Pages) from each edition's store Markdown.
 import fs from 'node:fs';
+import { esc, inline } from './inline.mjs';
 const editions = [
   { dir: 'fashionista', name: 'Lunamix Fashionista', src: '../Fashionista-Edition/docs/store' },
   { dir: 'heroes', name: 'Lunamix Heroes', src: '../Heroes-Edition/docs/store' },
   { dir: 'monsters', name: 'Lunamix Monsters', src: '../Monsters-Edition/docs/store' },
 ];
-const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const inline = s => esc(s).replace(/(https?:\/\/[^\s)]+)/g, '<a href="$1">$1</a>').replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<a href="mailto:$1">$1</a>');
 function md(src) {
   const out = []; let para = [];
   const flush = () => { if (para.length) { out.push(`<p>${inline(para.join(' '))}</p>`); para = []; } };
