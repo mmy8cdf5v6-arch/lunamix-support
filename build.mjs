@@ -5,6 +5,7 @@ const editions = [
   { dir: 'fashionista', name: 'Lunamix Fashionista', src: '../Fashionista-Edition/docs/store' },
   { dir: 'heroes', name: 'Lunamix Heroes', src: '../Heroes-Edition/docs/store' },
   { dir: 'monsters', name: 'Lunamix Monsters', src: '../Monsters-Edition/docs/store' },
+  { dir: 'fc', name: 'Lunamix FC', src: '../Football-Edition/docs/store' },
 ];
 function md(src) {
   const out = []; let para = [];
