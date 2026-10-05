@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import { esc, inline } from './inline.mjs';
 const editions = [
+  { dir: 'kids', name: 'Lunamix Kids', src: '../Project/docs/store' },
   { dir: 'girlie', name: 'Lunamix Girlie', src: './girlie/source' },
   { dir: 'fashionista', name: 'Lunamix Fashionista', src: '../Fashionista-Edition/docs/store' },
   { dir: 'heroes', name: 'Lunamix Heroes', src: '../Heroes-Edition/docs/store' },
