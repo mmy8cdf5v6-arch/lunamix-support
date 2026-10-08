@@ -9,6 +9,7 @@ const editions = [
   { dir: 'monsters', name: 'Lunamix Monsters', src: '../Monsters-Edition/docs/store' },
   { dir: 'fc', name: 'Lunamix FC', src: '../Football-Edition/docs/store' },
   { dir: 'dinosaurs', name: 'Lunamix Dinosaurs', src: '../../dinosaurs/docs/store/release-1.0' },
+  { dir: 'retrobots', name: 'Lunamix Retrobots', src: '../../retrobots/docs/store' },
 ];
 function md(src) {
   const out = []; let para = [];
