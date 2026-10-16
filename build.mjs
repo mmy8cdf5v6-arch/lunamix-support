@@ -12,6 +12,7 @@ const editions = [
   { dir: 'retrobots', name: 'Lunamix Retrobots', src: '../../retrobots/docs/store' },
   { dir: 'little', name: 'Lunamix Little', src: '../../little/docs/store/release-2.0' },
   { dir: 'rockets', name: 'Lunamix Rockets', src: '../../rockets/docs/store' },
+  { dir: 'big', name: 'Lunamix Big', src: '../../big/docs/store/release-2.0' },
 ];
 function md(src) {
   const out = []; let para = [];
